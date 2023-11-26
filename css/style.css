@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*    Navbar   */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.col_left {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.search {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  box-shadow: 2px 3px 10px #00000010;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  padding-left: 0.3rem;
+  height: 30px;
+  width: 200px;
+}
+
+.search .bx-search {
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav ul .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  color: #00c07c;
+}
+
+.auth_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.auth_button button:nth-child(1) {
+  background-color: transparent;
+  border: none;
+  width: 100px;
+  height: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.auth_button button:nth-child(2) {
+  background-color: black;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.auth_button button:nth-child(2):hover {
+  background-color: #2c2c2c;
+}
+
+/*      Hero Seaction     */
+main {
+  display: flex;
+  gap: 5em;
+  margin-top: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .left_col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+main .left_col h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+main .left_col h1 span {
+  color: #00c07c;
+}
+
+main .left_col .subhead {
+  padding-left: 5rem;
+}
+
+main .left_col .subhead span {
+  font-weight: 600;
+}
+
+.search_course {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.2px solid #111;
+}
+
+.search_course div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding-left: 0.5rem;
+}
+
+.search_course div input {
+  border: none;
+  outline: none;
+  width: 210px;
+  background-color: transparent;
+}
+
+.search_course button {
+  width: 100px;
+  height: 50px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.right_col .img_bg {
+  height: 450px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.right_col .side_content {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  background-color: #000;
+  color: #fff;
+  width: 250px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+.tags .col {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tags .col span {
+  font-weight: 500;
+}
+
+.tags .col i {
+  font-size: 1.5rem;
+}
+
+.bx-group {
+  color: #fcc71b;
+}
+
+.bxs-videos {
+  color: #f04d3c;
+}
+
+.bx-time-five {
+  color: #06b8f9;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  animation: reveal 1s ease-in forwards;
+  transform-origin: bottom;
+}
+
+@keyframes reveal {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+main {
+  animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  transform: scale(0.4);
+}
+
+@keyframes growIn {
+  to {
+    transform: scale(1);
+  }
+}
